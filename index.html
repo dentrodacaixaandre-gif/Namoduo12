@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistema Namoduo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="particles"></div>
+
+<section class="screen active" id="s1">
+<div class="card">
+<h1>🎮 Sistema Namoduo v1.0</h1>
+<p>Bem-vinda, aventureira.</p>
+<input id="nome" placeholder="Seu nome">
+<input id="nasc" type="date">
+<button onclick="next1()">Continuar</button>
+</div>
+</section>
+
+<section class="screen" id="s2">
+<div class="card">
+<h2>🔐 Verificação de Segurança</h2>
+<p>Qual a data de nascimento de Andy?</p>
+<input id="senha" placeholder="DD/MM/AAAA">
+<button onclick="verify()">Verificar</button>
+<p id="erro"></p>
+</div>
+</section>
+
+<section class="screen" id="s3">
+<div class="card">
+<h2>Carregando missão especial...</h2>
+<div class="bar"><div id="fill"></div></div>
+</div>
+</section>
+
+<section class="screen" id="s4">
+<div class="card">
+<div id="type"></div>
+<button onclick="proposal()">Continuar</button>
+</div>
+</section>
+
+<section class="screen" id="s5">
+<div class="card">
+<h1 class="pulse">❤️🎮</h1>
+<h2 id="nomePedido"></h2>
+<p>Você aceita viver uma linda jornada no Modo História, construir uma carreira Duo, participar das lives do Andy e ser sua parceira dentro e fora dos jogos?</p>
+<h3>Você aceita ser a Namoduo do Andy?</h3>
+<button onclick="accept()">🎮 Aceito a Party Invite</button>
+<button onclick="accept()">❤️ Entrar no Duo Permanentemente</button>
+</div>
+</section>
+
+<section class="screen" id="s6">
+<div class="card">
+<h1>🎉 MISSÃO CONCLUÍDA 🎉</h1>
+<h2 id="final"></h2>
+<h3>🏆 Melhor Duo Possível</h3>
+<ul>
+<li>✅ Carinho ilimitado</li>
+<li>✅ Troca de olhares apaixonados</li>
+<li>✅ Beijos gostosos</li>
+<li>✅ Abraços confortáveis</li>
+<li>✅ Cuidados e lealdade</li>
+<li>✅ Amor em tempo integral</li>
+<li>✅ Segurança e conforto</li>
+<li>✅ Risadas compartilhadas</li>
+<li>✅ Boa culinária</li>
+</ul>
+<h3>🏆 Benefícios Premium</h3>
+<ul>
+<li>⭐ Participação nas lives do Andy</li>
+<li>⭐ Prioridade máxima no coração do Andy</li>
+<li>⭐ Compartilhamento diário de memes</li>
+<li>⭐ Carregamento profissional em jogos online por Andy</li>
+</ul>
+<p><b>📸 Após a escolha, por favor tire print e encaminhe para Andy!</b></p>
+<p>❤️ Duo Formado • 🎮 Party Criada • ✨ Capítulo 1 Iniciado</p>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
